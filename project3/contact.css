@@ -1,0 +1,52 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    >form{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 500px;
+
+        >input{
+            height: 3em;
+            border: 1px solid #fff;
+            padding: 0.5em;
+            border-radius: 0.5em;
+        }
+        >textarea{
+            border: 1px solid #fff;
+            padding: 0.5em;
+            border-radius: 0.5em;
+        }
+        >button{
+            height: 3em;
+            background-color: #fff;
+            color: #222;
+            padding: 0.5em;
+            border-radius: 0.5em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contact form {
+        width: 60%;
+
+        >input{
+            height: 2em;
+            border-radius: 0.2em;
+        }
+        >button{
+            height: 2em;
+            border-radius: 0.2em;
+            
+        }
+    }
+  }
+
+
