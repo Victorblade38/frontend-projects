@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible-Form-UI</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="h-screen bg-gray-700 flex justify-center items-center">
+    <div class="flex flex-row bg-gray-200 rounded-md p-4">
+        <form class="flex flex-col p-4 w-80">
+            <label for="fullname" class="mb-4 font-medium flex flex-col gap-2">
+                Enter Fullname:
+                <input type="text" placeholder="what should we call you" id="fullname" name="fullname"
+                    aria-required="true"
+                    class="focus:outline-none focus:ring focus:ring-red-400 p-2 rounded-md text-gray-800 font-medium shadow-sm">
+                <p class="text-sm text-red-500 hidden">Error message here</p>
+            </label>
+            <label for="email" class="mb-4 font-medium flex flex-col gap-2">
+                Enter Email:
+                <input type="email" placeholder="enter your email" id="email" name="email" aria-required="true"
+                    class="focus:outline-none focus:ring focus:ring-red-400 p-2  rounded-md text-gray-800 font-medium shadow-sm">
+                <p class=" text-sm text-red-500 hidden">Error message here</p>
+            </label>
+            <label for="new-password" class="mb-4 font-medium flex flex-col gap-2">
+                Enter Password:
+                <input type="password" placeholder="enter a strong password" id="new-password" name="new-password"
+                    aria-required="true" autocomplete="new-password"
+                    class="focus:outline-none focus:ring focus:ring-red-400 p-2  rounded-md text-gray-800 font-medium shadow-sm" />
+                <p class="text-sm  text-red-500 hidden">Error message here</p>
+            </label>
+            <label for="confirm-password" class="mb-4 font-medium flex flex-col gap-2">
+                Confirm Password:
+                <input type="password" placeholder="confirm your password" id="confirm-password" name="confirm-password"
+                    aria-required="true" autocomplete="new-password"
+                    class="focus:outline-none focus:ring focus:ring-red-400 p-2  rounded-md text-gray-800 font-medium shadow-sm" />
+                <p class="text-sm  text-red-500 hidden">Error message here</p>
+            </label>
+            <button type="submit" class="px-4 py-3 bg-black rounded-md text-white font-semibold shadow-md">Update
+                Profile</button>
+        </form>
+
+        <div class="flex flex-col items-center p-4 gap-4">
+            <div class="relative">
+                <!-- Outer Circle -->
+                <div class="w-40 h-40 rounded-full flex justify-center items-center">
+                    <!-- Inner Circle (progress arc) -->
+                    <svg class="absolute" width="160" height="160">
+                        <circle cx="80" cy="80" r="70" stroke="gray" stroke-width="6" fill="transparent" />
+                        <circle cx="80" cy="80" r="70" stroke="black" stroke-width="6" stroke-dasharray="440"
+                            stroke-dashoffset="154" fill="transparent" />
+                    </svg>
+                    <!-- Text in the center -->
+                    <p class="absolute text-xl font-bold">65%</p>
+                </div>
+            </div>
+            <p class="font-semibold">Profile Completeness</p>
+            <div class="h-full flex flex-col p-6 gap-2 bg-gray-300 rounded-md font-medium shadow-md">
+                <p class="text-slate-500 line-through">Create Account</p>
+                <p class="text-slate-500 line-through">Updated Roadmap Progress</p>
+                <p class="text-slate-500 line-through">Setup Public Profile</p>
+                <p class="text-black ">Complete your first project</p>
+                <p class="text-black ">Invite you Friends</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
