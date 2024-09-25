@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+}
+body{
+    padding: 0 2em;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    
+}
+
+header .logo{
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 1em;
+        }
+    }
+}
+main{
+    margin: 1em 0;
+}
+
+main .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6em;
+}
+
+main .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+.main-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    ul{
+        margin-left: 1em;
+    }
+    
+}
+
+.main-work-experience{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+
+        h4{
+            margin-bottom: 0.5em;
+        }
+}
+
+.main-education{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    ul{
+        margin-left: 1em;
+    }
+
+}
+
+.main-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    blockquote{
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+
+    main ul{
+        list-style: none;
+    }
+    main .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4em 2em;
+    }
+    main .main-reviews{
+        text-align: center;
+        
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    header nav ul li a{
+        font-size: 0.7em;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        padding: 2em 2em;
+    
+    }
+  }
+
+ 
