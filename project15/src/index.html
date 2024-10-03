@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="h-screen bg-gray-600 flex justify-center items-center">
+    <div class="bg-white p-10 rounded-md flex flex-row gap-10">
+        <div class="flex flex-col gap-2">
+            <div
+                class="w-48 relative border-2 border-black p-4 rounded flex flex-row gap-6 font-semibold justify-between items-center">
+                <span id="select-text-area">Select item</span>
+                <img src="./uparrow.png" width="25" class="bg-black rounded-md cursor-pointer " id="dropBtn">
+            </div>
+            <ul class="absolute bottom-32 bg-white border-2 border-black rounded flex flex-col gap-2 font-semibold items-center text-center "
+                id="select-info">
+                <li class="cursor-pointer hover:bg-blue-500 hover:text-white w-full px-4 py-2" id="first-item">first
+                    item
+
+                </li>
+                <li class="cursor-pointer hover:bg-blue-500 hover:text-white w-full px-4 py-2" id="second-item">second
+                    item
+                </li>
+                <li class="cursor-pointer hover:bg-blue-500 hover:text-white w-full px-4 py-2" id="third-item">third
+                    item</li>
+                <li class="cursor-pointer hover:bg-blue-500 hover:text-white w-full px-4 py-2" id="fourth-item">fourth
+                    item
+                </li>
+            </ul>
+        </div>
+        <select name="select" id=""
+            class="border-2 border-black h-14 p-4 rounded flex flex-row gap-6 font-semibold items-center">
+            <option value="select-item">select item</option>
+            <option value="one">One</option>
+            <option value="two">two</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
